@@ -10,6 +10,7 @@ public class NewsBean {
 
     public String name;
     public String imageSrc;
+    public String color;
 
     public NewsBean(String name, String imageSrc) {
         this.name = name;
@@ -31,6 +32,21 @@ public class NewsBean {
 
     public NewsBean setImageSrc(String imageSrc) {
         this.imageSrc = imageSrc;
+        return this;
+    }
+
+    public NewsBean(String name, String imageSrc, String color) {
+        this.name = name;
+        this.imageSrc = imageSrc;
+        this.color = color;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public NewsBean setColor(String color) {
+        this.color = color;
         return this;
     }
 }

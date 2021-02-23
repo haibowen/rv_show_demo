@@ -53,7 +53,7 @@ public class RvlistAdapter extends RecyclerView.Adapter<RvlistAdapter.ViewHolder
         //   holder.linearLayout.setBackgroundColor(Color.parseColor("#ff7945"));
 
         GradientDrawable gd = (GradientDrawable) holder.linearLayout.getBackground();
-        gd.setColor(Color.parseColor("#ff7945"));
+        gd.setColor(Color.parseColor(dataList.get(position).color));
         holder.linearLayout.setBackground(gd);
 
 

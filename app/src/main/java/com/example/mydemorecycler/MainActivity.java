@@ -41,7 +41,9 @@ public class MainActivity extends AppCompatActivity {
     public void getData() {
 
         for (int i = 0; i < 10; i++) {
-            dataList.add(new NewsBean("车市" + i, ""));
+            dataList.add(new NewsBean("车市" + i, "","#ff2941"));
+            dataList.add(new NewsBean("车市" + i, "","#ff7941"));
+            dataList.add(new NewsBean("车市" + i, "","#ff7911"));
         }
     }
 }
